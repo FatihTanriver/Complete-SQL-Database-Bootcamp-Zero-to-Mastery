@@ -28,7 +28,6 @@ ORDER BY e.emp_no;
 
 SELECT e.emp_no
 FROM employees as e
-JOIN salaries as s USING(emp_no)
 JOIN dept_emp AS de USING(emp_no)
 WHERE de.dept_no = 'd005'
 GROUP BY e.emp_no
