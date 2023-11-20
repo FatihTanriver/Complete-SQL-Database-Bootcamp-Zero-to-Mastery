@@ -1,0 +1,45 @@
+DBMS: PostgreSQL  		// Opensource 
+UI	: Valentine DBE		// used to manage PostgreSQL
+ Vale_*1234
+
+Environment Tooling
+	URL: localhost
+	Port: 5432
+	Username:
+	Password:	root
+	Connection URL: localhost
+	
+	
+SQL Tooling Alternative
+	Ask before decide
+		Is it cross-platform
+		Is it easy to use
+		Is it free
+		Can it be extended to multiple database providers
+		
+		
+	Alternative to Valentine DBE
+		1. PG Admin + Command line
+		2. Datagrip
+		3. DBeaver
+		4. Other tools that caught our eye
+			GitHub - plotly/falcon: Free, open-source SQL client for Windows and Mac 🦅
+			DbVisualizer - The Universal Database Tool
+			TablePlus | Modern, Native Tool for Database Management
+			
+DownloadLink
+	https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+	
+	install PostgreSQL 12 // valentina db supports postgreSQL 12 
+	
+	PostgreSQL Install detail
+		Installation Directory: C:\Program Files\PostgreSQL\12
+		Server Installation Directory: C:\Program Files\PostgreSQL\12
+		Data Directory: C:\Program Files\PostgreSQL\12\data
+		Database Port: 5432
+		Database Superuser: postgres
+		Operating System Account: NT AUTHORITY\NetworkService
+		Database Service: postgresql-x64-12
+		Command Line Tools Installation Directory: C:\Program Files\PostgreSQL\12
+		pgAdmin4 Installation Directory: C:\Program Files\PostgreSQL\12\pgAdmin 4
+		Stack Builder Installation Directory: C:\Program Files\PostgreSQL\12

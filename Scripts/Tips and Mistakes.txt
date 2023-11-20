@@ -1,0 +1,11 @@
+##Common Select Mistakes
+	Typos Reserved Keys // Select, From
+	Typos Table Names
+	Misusing of ; and , symbols
+	Using " instead of '
+		
+		" is for tables
+		' is for text
+		
+		SELECT * From "EmPloyees"; 	//wont work with double quote we make table name case-sensitive
+		SELECT * From EmPloyees;	//will work without quotation it's not case-sensitive

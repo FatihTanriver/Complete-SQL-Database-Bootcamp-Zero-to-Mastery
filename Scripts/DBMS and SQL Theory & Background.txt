@@ -1,0 +1,152 @@
+Theoritical Infos
+	Pre-Infos
+		-why we use sylinder discs as database symbol
+		   ~Drum Memory: https://stackoverflow.com/questions/2822650/why-is-a-database-always-represented-with-a-cylinder
+		   
+		- 5 Types of database
+				Relational: MySql, MSSQL, Oracle
+				Document:	MongoDB
+				key value: 	Redis
+				Graph:		
+				key value, 
+				wide columnar
+				
+				
+	Imperative vs Declerative 
+
+		Declerative:
+			What will happen
+			~ Make a sandwich
+			I.E: SQL
+			Simple, Easy to Understand
+		
+		
+		Imperative:
+			How will happen
+			~ Slice bread , Slice Ham, Put Ham in Between, Make Sandwich
+			I.E: Java
+			More flexible, you can do lots of thing it can become complex (You must managa all extra actions)
+			
+		*In Python you can do both
+		
+		
+	History of SQL
+		SEQUEL ; Structured English Query Language
+		than it is changed to to SQL (Due to Copyright conflict)
+		
+		SQL is standardized ?
+		~Link: (History of Databases) https://www.youtube.com/watch?v=KG-mqHoXOXY
+		
+		
+	SQL Standards
+		SQL 86 -- SQL 2011 -- SQL 2016
+
+	What is a database?
+		Before DB , there File Processing Systems (Saving data individual files, no relations)
+					Limitation of relations leads unmanageable
+				
+	
+	
+	Database Oriented Approach
+		DBMS: Database Management Software	
+		! this software was the interface between your data and whatever was storing your data
+		
+		SQL - DBMS
+		
+		SQL: Unified language to talk with DBMS
+		
+		Which leads user focus just on the SQL 
+		
+		DBMS follows a specific way of structuring and saving data which called 'MODEL'
+	
+	Database Models
+		
+		Hierarchical (Old and Popular)
+		Networking	(Old and Popular)
+		Entity-Relationship
+		Relational*
+		Object Oriented
+		Flat
+		Semi-Structured
+		..
+		
+		
+		Hierarchical Model:
+			First Used in 60s and 70s by IBM.And hasn't been seen today very much due to its inefficiencies
+			Child have just one parent (one to many)
+		
+		
+		Networking Model:
+			Expand hierarchical model, allows many to many relations.
+			Management perspective still complex
+			
+		
+			
+		Relational Model:
+			Formalized Set of Rules
+			
+			?How to see the relation between two table
+			One way 
+				Creating third table to show the relationship
+				
+			!!The logic of how the relationships are linked are managed by the database.(DB management software)
+			
+			
+	DBMS Revisited
+		Link: (Codd's Rules for RDBMS)https://www.w3resource.com/sql/sql-basic/codd-12-rule-relation.php
+		(The rules that have applied to DBMS in order to call it RDBMS)->According to inventor(Edgar Frank Codd) of Relational Model
+		
+		DBMS can do:
+			- CRUD Operations
+			- Manage date (where to save)
+			- Secure (security policies, permissions)
+			- Transaktion Management (manage differnet similtenaus transactions)
+			
+		Who Makes this softwares (DBMS)?
+			Microsoft (MSSQL)
+			IBM
+			Oracle
+			MySql
+			PostgreSQL (Open source)
+	
+
+	Relational Model Revisited
+	
+		Terms: 
+			-Relation Schema
+			-Attribute
+			-Degree
+			-Cardinality
+			-Tuple
+			-Column
+			-Relation Key
+			-Domain
+			-Tables
+			-Relation Instance
+			
+		
+	TABLES (Relational Model)
+		each table has a name
+		table has columns
+		
+	Columns
+		each has a name
+		collection of the all columns is called "Degree" _ degree of the relation
+		when we talk about what a column can store, we call that "Domain/Constraint"
+			i.E we have birthdate column which must be 'datetime' format, we are 'constraining it'
+			
+	Rows
+		another word row is 'tuple'
+		collection of rows is 'cardinality' of tables
+		
+	Primary and Foreign Keys
+		Foreign Key is map the primary key of other table.
+		
+	OLTP vs OLAP
+	
+	
+		OLTP: online transaction processing
+			-support day to day
+			
+		OLAP: online analytic processing
+			-support analysis

@@ -1,0 +1,73 @@
+FROM -> WHERE -> SELECT
+
+Precedence Order:
+		1)PARENTHESIS
+		2)Multiplication / Division
+		3)Subtraction / Addition
+		4)NOT
+		5)AND
+		6)OR
+		
+		__
+		
+		1. Parenthesis
+		2. Arithmetic Operators
+		3. Concatenation Operators
+		4. Comparison Conditions
+		5. IS NULL, LIKE, NOT IN, etc.
+		6. NOT
+		7. AND
+		8. OR
+		
+	
+PRIORITY: A Statement having  multiple operators is evaluated based on the
+			priority of operators.
+
+	
+!! 	if the operators have equal precedence,  then the operators are evaluated
+	directionally, from left to right OR right to left
+	
+	What determines the direction?
+		(Operator Precedence (highest to lowest))
+		https://www.postgresql.org/docs/12/sql-syntax-lexical.html#SQL-PRECEDENCE 
+		
+		
+		
+		(Expression Evaluation Rules)
+		https://www.postgresql.org/docs/12/sql-expressions.html#SYNTAX-EXPRESS-EVAL
+		
+		
+Ex1: 	age > 20 
+		AND salary > 1000
+		AND gender = 'f'
+		AND NOT state = 'NY'
+		
+	Order: 	1. Age > 20
+			2. Salary > 1000
+			3. NOT from NY
+			4. Gender female
+			
+Ex2:	age > 20 
+		OR age < 30
+		AND salary > 1000
+		AND NOT state = 'NY'
+		AND NOT state = 'OR'
+		
+	Order:	1. Over 20
+			2. Younger than 30
+			3. Salary > 1000
+			4. NOT from NY
+			5. NOT from OR
+			
+			
+Ex3:	age > 20 
+		OR age < 30
+		AND salary > 1000
+		AND (NOT state = 'NY'
+		AND NOT state = 'OR')
+		
+	Order:	1. NOT from NY
+			2. NOT from OR
+			3. Over 20
+			4. Younger than 30
+			5. Salary > 1000

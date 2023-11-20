@@ -1,0 +1,78 @@
+SQL COMMANDs
+	DCL: Data Control Language
+	DDL: Data Definition Language
+	DQL: Data Query Language
+	DML: Data Modification Language
+	
+	
+	Ex1: Give me a list of all employees in the company
+		SELECT  * FROM  employees;
+		
+	Ex2: How many Departmants are there in the company
+		SELECT  Count(*) FROM  departments;
+		
+	Ex3: How many times has employee 10001 had a raise?
+
+		Select *  From Salaries Where emp_no = 10001;
+		Select Count(*) - 1  From Salaries Where emp_no = 10001;
+		
+	Ex4: What Title Does 10006(Employee) Have?
+
+		SELECT title From titles Where emp_no = 10006;
+	
+	
+
+
+#Renaming Columns (for Output)
+	
+	SELECT emp_no AS 'Employee Number' FROM  employees; 
+	
+#Column Concatenation (Concat Function)
+
+	Ex5: Concat first and last name of the employee into one column
+		 Rename the concatenated column
+		 
+		 SELECT CONCAT(first_name, ' ', last_name ) As "Full Name" From employees ;
+		 
+		 !!each and every row we call concat function
+		 
+#Function in SQL
+	!A function Is a set of steps that creates a single value
+	
+	Two types of function
+		-Aggregate
+			*runs against all data produce 1 value
+			*take all data and gives one output i.E SUM
+		
+		-Scalar
+			*they run each single individual row independently
+			*every single row produce a single value i.E Concat
+			
+#Aggregate Functions
+
+		AVG()
+		COUNT()
+		MIN()
+		MAX()
+		SUM()
+		
+#Comments
+
+	-- Single Comment Example 
+	/* Multiline
+	 * Comment
+	 * looks like this
+	 */
+	 
+	 
+#AND and OR
+	without brackets order precedence first OR than AND
+	
+#NOT
+
+#Comparison
+	!= , <>	//not equal to
+	> 		// greater than
+	<		// smaller than..
+	
+	Link : https://www.postgresql.org/docs/12/functions-comparison.html

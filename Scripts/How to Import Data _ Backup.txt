@@ -1,0 +1,33 @@
+Loading a back up
+-----------------
+
+1)In Valentina Studio create PostgreSQL Database
+	We have four databases in our test data
+		- Employees
+		- France
+		- Store
+		- World
+		
+	We name these four as our Database names
+	
+2)
+
+//with these commands we can connect to Postgres and see available databases
+> cd C:\Program Files\PostgreSQL\12\bin
+> C:\Program Files\PostgreSQL\12\bin>psql -U postgres
+
+2) 
+**We want to restore a backup, backup files are in diff directories
+**In those directories we should run psql and restore our backups
+
+W:\....\databases\employee>"C:\Program Files\PostgreSQL\12\bin\psql.exe" -U postgres
+
+W:\....\databases\employee>"C:\Program Files\PostgreSQL\12\bin\psql.exe" -U postgres -d Employees < employees.sql
+
+//in backup files directory
+>"C:\Program Files\PostgreSQL\12\bin\psql.exe" -U postgres -d World < world.sql
+>"C:\Program Files\PostgreSQL\12\bin\psql.exe" -U postgres -d Store < store.sql
+>"C:\Program Files\PostgreSQL\12\bin\psql.exe" -U postgres -d France < france.sql
+
+
+
